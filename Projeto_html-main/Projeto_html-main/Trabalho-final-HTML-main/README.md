@@ -15,4 +15,4 @@ Ah, os dados armazenam os últimos 10 valores rolados para impedir roubos.
 Para acessar é só baixar o repositório, extrair o .zip e jogar no vscode
 
 
-Prof, como não tenho seu email e nenhum tipo de contato seu, to escrevendo aqui para avisar que na aula de hoje (08/11/24) eu aprsentei o trabalho e levei falta, se puder consertar eu agradeço, pois fiquei com 17,6% de faltas.
+Prof, como não tenho seu email e nenhum tipo de contato seu, to escrevendo aqui para avisar que na aula de hoje (08/11/24) eu apresentei o trabalho e levei falta, se puder consertar eu agradeço, pois fiquei com 17,6% de faltas.
