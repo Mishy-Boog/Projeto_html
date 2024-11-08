@@ -1,0 +1,254 @@
+body {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+main{
+    max-width: 100%;
+    display: flex; 
+    align-items: center;
+
+
+}
+
+.info3, .info4 {
+
+    flex-wrap: wrap; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+}
+
+input {
+    border-radius: 6px; 
+    background: transparent; 
+    outline: none; 
+    
+}
+
+.kak6 {
+    flex-direction: row;
+    flex-wrap: wrap; 
+
+    border-collapse: collapse;
+    
+}
+
+.kak6 span {
+    flex: 1 1 10%; 
+   
+}
+
+.container3 {
+
+    display: flex;
+    flex-wrap: wrap; 
+    max-width: 100%;
+
+}
+
+
+.ficha3{
+    
+    flex: auto; 
+    max-width: 90%; 
+    border: 3px solid #ccc; 
+ 
+ border-collapse: collapse; 
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+   
+}
+
+
+input[type="number"] {
+    border: 2px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+    color: #000;
+
+}
+
+
+input[type="number"]:hover {
+    border-color: #007BFF; 
+}
+
+input[type="text"] {
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    color: #000; 
+    box-sizing: border-box; 
+}
+
+
+input[type="text"]:hover {
+    border-color: #007BFF; 
+}
+
+
+input[type="text"]:focus {
+    border-color: #007BFF; 
+    outline: none; 
+}
+
+
+.prt1, .prt2, .prt3{
+    flex-wrap: wrap; 
+
+    border: 1px solid #ccc; 
+
+    text-align: center;
+    flex: auto; 
+
+    max-width: 100%;
+
+
+}
+
+.trq1{
+    max-width: 100%;
+
+    flex-wrap: wrap; 
+
+    border: 1px solid #ccc; 
+
+    flex: auto; 
+}
+
+.trq1, .mag1, .mag2, .mag3, .mag4, .mag5, .mag6, .mag7, .mag8, .mag9{
+
+    flex-wrap: wrap; 
+
+    border: 1px solid #ccc; 
+
+    flex: auto; 
+
+    padding: 10px;
+
+    max-width: 100%;
+    
+}
+
+.trq1 input, .mag1 input, .mag2 input, .mag3 input, .mag4 input,
+ .mag5 input, .mag6 input, .mag7 input, .mag8 input, .mag9 input{
+
+    max-width: 100%;
+
+    align-items: center;
+
+    flex: auto;
+    
+   padding: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-right: 10px; 
+    
+ }
+
+ .sep1 {
+    border: 1px solid #ccc; 
+    padding: 10px;
+    max-width: 100%;
+
+
+
+}
+
+.sep1 input {
+    height: 15px; 
+    width: 40px; 
+
+
+}
+
+.sepm1{
+    border: 2px solid #ccc; 
+    padding: 10px;
+
+}
+
+.sep1 {
+    display: flex;
+    flex-direction: row; 
+    margin: 20px;
+    flex-wrap: wrap ;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row; 
+    position: relative; 
+    max-width: 100%;
+    flex: auto;
+
+    flex-wrap: wrap ;
+}
+
+
+
+.input-container .tooltip {
+    display: none; 
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: 40px; 
+    left: 0;
+    z-index: 10;
+}
+
+.input-container:hover .tooltip {
+    display: block; 
+}
+
+.input-container2 .tooltip {
+    display: none; 
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    right: 70%; 
+    top: 0%; 
+    transform: translateY(-0%); 
+    z-index: 10;
+}
+
+.input-container2 {
+    align-items: center; 
+    position: relative; 
+    
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    flex:auto;
+    max-width: 100%;
+}
+
+.input-container2 input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+
+.input-container2:hover .tooltip {
+    display: block; 
+}
+
+.alinha-placeholder {
+
+    text-align: center; 
+}
+
