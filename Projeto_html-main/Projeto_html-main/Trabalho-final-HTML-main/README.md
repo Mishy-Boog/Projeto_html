@@ -1,16 +1,11 @@
 # Reginaldo Pega Girassóis
 
-Eu decidi fazer o site com esse tema pois eu adoro rpg e queria fazer pelo menos um protótipo de um possível app ou site mesmo.
-O HTML foi modificado diversas vezes mas tentei ajeitar o máximo possível.
-Eu queria que ele tivesse uma pegada que lembrasse jogos tipo Minecraft e Terraria.
-O CSS tá uma gambiarra mas foi o necessário pra ficar legal.
-O design em si pode tá meio estranho mas eu gostei. 
-E eu tive a conclusão que eu odeio JS, consegui fazer algumas coisas por mim mesma mas eu tive que ler e pedir ajuda para as coisas mais incrementadas.
-O site usa local storage para armazenar as informações.
-Tem um cálculo automático dos atributos, que vai pras perícias e pro teste de resistência.
-Tinha um cálculo para o bônus de proficiência, nível e xp mas na hora de colocar o local storage ele parou de funcionar e não consegui resolver.
-E sim, sei que pediu para não usar o alert mas é só pra avisar que a página foi salva e que carregou.
-O personagem na tela inicial apesar de feinho é o Reginaldo, a inspiração do meu site, queria que ele fosse um anão colhendo girassóis, então desenhei ele assim.
-Ah, os dados armazenam os últimos 10 valores rolados para impedir roubos.
-Para acessar é só baixar o repositório, extrair o .zip e jogar no vscode
+Eu optei por desenvolver o site com esse tema porque sou apaixonada por RPG e queria criar, ao menos, um protótipo de uma possível aplicação ou site. O HTML passou por diversas modificações, mas busquei otimizar o máximo possível a estrutura. O design foi inspirado em jogos como Minecraft e Terraria, buscando uma identidade visual que remetesse a esses universos. Embora o CSS tenha tido uma solução improvisada para garantir que o visual ficasse satisfatório, considero que foi necessário para alcançar o resultado esperado. 
 
+O design pode parecer um pouco peculiar, mas fiquei satisfeita com o resultado. Em relação ao JavaScript, descobri que realmente não é minha praia; embora tenha implementado algumas funcionalidades sozinha, precisei recorrer a leituras e buscar ajuda para implementar os recursos mais complexos. O site utiliza *local storage* para armazenar informações localmente. 
+
+Implementei um cálculo automático dos atributos, que alimenta as perícias e o teste de resistência. No entanto, tive problemas ao integrar o cálculo para o bônus de proficiência, nível e XP com o *local storage* — o processo deixou de funcionar, e não consegui corrigir. 
+
+Apesar de ser solicitado para evitar o uso do `alert`, optei por utilizá-lo apenas para notificações simples, como confirmação de que a página foi salva ou carregada corretamente. O personagem que aparece na tela inicial, embora não seja perfeito, é uma representação do "Reginaldo", a inspiração por trás do site. A ideia é que ele seja um anão colhendo girassóis, então desenhei ele de acordo com essa visão.
+
+Além disso, os dados registrados incluem os últimos 10 valores rolados para impedir manipulação indevida. Para acessar o projeto, basta baixar o repositório, extrair o arquivo `.zip` e abrir o conteúdo no VSCode.
