@@ -1,0 +1,33 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    flex-grow: 1; 
+    position: relative;
+}
+
+.abo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('Reginaldo.jpeg') no-repeat center center;
+    background-size: cover; 
+    z-index: -1; 
+}
+
+.text {
+    padding: 20px;
+    z-index: 1; 
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px;
+}

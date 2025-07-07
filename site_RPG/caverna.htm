@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="caverna.css">
+    <script src="caverna.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Caverna</title>
+</head>
+<body>
+    <header> 
+        <h1 id="hil">
+            <span id="aaa" class="larger-letter">R</span>eginaldo
+            <span id="bbb" class="larger-letter">P</span>ega
+            <span id="ccc" class="larger-letter">G</span>irassóis 
+        </h1>
+        <nav>
+            <ul>
+                <li><a id="eto" href="caverna.htm">🐉 Caverna</a></li>
+                <li><a id="eto" href="ficha1.htm">🧝🏻 Ficha 1</a></li>
+                <li><a id="eto" href="ficha2.htm">🧙🏾‍♂️ Ficha 2</a></li>
+                <li><a id="eto" href="ficha3.htm">🧚🏿‍♀️ Ficha 3</a></li>
+                <li><a href="#" id="logoutBtn">🚪 Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="jub" class="text"> 
+            <h1>Rolador de Dados</h1>
+            <div>
+                <button onclick="rolarDado(4)">D4</button>
+                <button onclick="rolarDado(6)">D6</button>
+                <button onclick="rolarDado(8)">D8</button>
+                <button onclick="rolarDado(10)">D10</button>
+                <button onclick="rolarDado(12)">D12</button>
+                <button onclick="rolarDado(20)">D20</button>
+                <button onclick="rolarDado(100)">D100</button>
+            </div>
+            <div class="resultado" id="resultado"></div>
+            <div class="historico" id="historico"></div>
+        </div>
+
+    </main>
+    <footer> 
+        <p>Isso é um rodapé!🐉</p>
+    </footer>
+
+    
+    <script src="logout.js"></script>
+</body>
+</html>

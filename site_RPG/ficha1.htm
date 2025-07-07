@@ -1,0 +1,507 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> <!-- Mim note speaqui ingreshi -->
+<head> 
+    <link rel="icon" href="Reginaldo.jpeg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="ficha1.css">
+    <link rel="stylesheet" href="botoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <title>Ficha 1</title>
+
+</head>
+<body>
+    <header> 
+        <h1 id="hil">
+            <span id="aaa" class="larger-letter">R</span>eginaldo
+            <span id="bbb" class="larger-letter">P</span>ega
+            <span id="ccc" class="larger-letter">G</span>irassóis 
+        </h1>
+        <nav>
+            <ul> 
+                <li><a id="eto" href="caverna.htm">🐉 Caverna</a></li>
+                <li><a id="eto" href="ficha1.htm">🧝🏻 Ficha 1</a></li>
+                <li><a id="eto" href="ficha2.htm">🧙🏾‍♂️ Ficha 2</a></li>
+                <li><a id="eto" href="ficha3.htm">🧚🏿‍♀️ Ficha 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <h1>Sua ficha:</h1>
+    <div class="container-botoes">
+        <button id="salvarFicha">Salvar Ficha</button>
+        <button id="carregar">Carregar Ficha</button>
+    </div>
+    
+
+    <div class="ficha1">
+
+        <div class="m1"> 
+
+            <div class="info1">
+                <div class="kak1">
+                <label for="personagem">Nome do Personagem:</label>
+                <input type="text" id="personagem" value="">
+           
+                <label for="jogador">Nome do jogador:</label>
+                <input type="text" id="jogador" value="">
+            </div>
+ 
+            </div>
+
+        </div>
+
+        <div class="m2"> 
+
+            <div class="info1">
+                <div class="kak2">
+                    <span>
+                        <label for="classe1">Classe:</label>
+                        <input type="text" id="classe1" value="">
+                    </span>
+                    <span>
+                        <label for="nivel">Nível:</label>
+                        <input type="number" id="nivel" value=""> 
+                    </span>
+                    <span>
+                        <label for="antecedente">Antecedente:</label>
+                        <input type="text" id="antecedente" name="antecedente" value="">
+                    </span>
+                    <span>
+                        <p></p>
+                        <label for="raca">Raça:</label>
+                        <input type="text" id="raca" name="raca" value="">
+                    </span>
+                    <span>
+                        <label for="tendencia">Tendência:</label>
+                        <input type="text" id="tendencia" name="tendencia" value="">
+                    </span>
+                    <span>
+                        <label for="pc-experiencia">Pontos de Experiência:</label>
+                        <input type="number" id="pc-experiencia" name="pc-experiencia" value="" oninput="calcularNivel()">
+                    </span>
+                </div>                
+            </div>
+
+        </div>
+
+    <div class="container1">
+        <div class="m3"> 
+
+                <div class="atributo">
+                    <h4>Atributos</h4>
+
+                        <div class="at1">
+                        <span>
+                            <label for="forca">Força:</label>
+                            <p></p>
+                            <input type="number" id="forca" value="0" oninput="atualizarModificadores(); atualizarTestesDeResistencia();">
+                            <p>Modificador de força: <span id="mod-forca"></span></p>
+                    
+                        </span>
+                        <p></p>
+                        </div>
+
+                        <div class="at2">
+                        <span>
+                            <label for="destreza">Destreza:</label>
+                            <p></p>
+                            <input type="number" id="destreza" value="0" oninput="atualizarModificadores(); atualizarTestesDeResistencia();">
+                            <p>Modificador de destreza: <span id="mod-destreza"></span></p>
+                        </span>
+                        <p></p>
+                        </div>
+
+                        <div class="at3">
+                        <span>
+                            <label for="constituicao">Constituição:</label>
+                            <p></p>
+                            <input type="number" id="constituicao" value="0" oninput="atualizarModificadores(); atualizarTestesDeResistencia();">
+                            <p>Modificador de Constituição: <span id="mod-constituicao"></span></p>
+                        </span>
+                        <p></p>
+                        </div>
+
+                        <div class="at4">
+                        <span>
+                            <label for="inteligencia">Inteligência:</label>
+                            <p></p>
+                            <input type="number" id="inteligencia" value="0" oninput="atualizarModificadores(); atualizarTestesDeResistencia();">
+                            <p>Modificador de inteligência: <span id="mod-inteligencia"></span></p>
+                        </span>
+                        <p></p>
+                        </div>
+
+                        <div class="at5">
+                        <span>
+                            <label for="sabedoria">Sabedoria:</label>
+                            <p></p>
+                            <input type="number" id="sabedoria" value="0" oninput="atualizarModificadores(); atualizarTestesDeResistencia();">
+                            <p>Modificador de Sabedoria: <span id="mod-sabedoria"></span></p>
+                        </span>
+                        <p></p>
+                        </div>
+
+                        <div class="at6">
+                        <span>
+                            <label for="carisma">Carisma:</label>
+                            <p></p>
+                            <input type="number" id="carisma" value="0" oninput="atualizarModificadores(); atualizarTestesDeResistencia();">
+                            <p>Modificador de carisma: <span id="mod-carisma"></span></p>
+                        </span>
+                        </div>
+                </div>
+
+        </div>
+
+        <div class="m4" > 
+
+            <div class="peq1">
+            <label for="inspiracao">Inspiração: </label>
+            <input type="number" id="inspiracao" value="0">
+            <p></p>
+            </div>
+
+            <div class="peq2">
+            <label for="bonus-proeficiencia">Bônus de Proeficiência:</label>
+            <input type="text" id="bonus-proeficiencia" value="+2" >
+            <p></p>
+            </div>
+
+            <div class="peq3">
+            <label for="sab-passiva">Sabedoria (Percepção) Passiva: </label>
+            <input type="number" id="sab-passiva" value="0">
+            <p></p>
+            </div>
+
+            <div class="atributo">
+
+                <div class="tr0">
+                <h4>Teste de Resistência</h4>
+                </div>
+
+                <div class="tr1">
+                <span>
+                    <input type="checkbox" id="forca-check" oninput="atualizarTestesDeResistencia();">
+                    <label for="forca-check">Força</label>
+                    <span id="mod-forca-resistencia"></span>
+                </span>
+                <p></p>
+                </div>
+            
+                <div class="tr2">
+                <span>
+                    <input type="checkbox" id="destreza-check" oninput="atualizarTestesDeResistencia();">
+                    <label for="destreza-check">Destreza</label>
+                    <span id="mod-destreza-resistencia"></span>
+                </span>
+                <p></p>
+                </div>
+
+                <div class="tr3">
+                <span>
+                    <input type="checkbox" id="constituicao-check" oninput="atualizarTestesDeResistencia();">
+                    <label for="constituicao-check">Constituição</label>
+                    <span id="mod-constituicao-resistencia"></span>
+                </span>
+                <p></p>
+                </div>
+
+                <div class="tr4">
+                <span>
+                    <input type="checkbox" id="inteligencia-check" oninput="atualizarTestesDeResistencia();">
+                    <label for="inteligencia-check">Inteligência</label>
+                    <span id="mod-inteligencia-resistencia"></span>
+                </span>
+                <p></p>
+                </div>
+
+                <div class="tr5">
+                <span>
+                    <input type="checkbox" id="sabedoria-check" oninput="atualizarTestesDeResistencia();">
+                    <label for="sabedoria-check">Sabedoria</label>
+                    <span id="mod-sabedoria-resistencia"></span>
+                </span>
+                <p></p>
+                </div>
+
+                <div class="tr6">
+                <span>
+                    <input type="checkbox" id="carisma-check" oninput="atualizarTestesDeResistencia();">
+                    <label for="carisma-check">Carisma</label>
+                    <span id="mod-carisma-resistencia"></span>
+                </span>
+                </div>
+
+</div>
+
+        </div>
+
+        <div class="m5"> 
+
+             <div class="temp1"> 
+
+                <label for="classe-armadura">Classe de Armadura: </label>
+                <input type="number" id="classe-armadura" value="0">
+                <p></p>
+                <input type="checkbox" id="classe-armadura-check">
+                <span class="checkmark">Escudo?</span>
+
+                <p></p>
+                <label for="iniciativa">Iniciativa: </label>
+                <input type="number" id="iniciativa" value="0">
+                <p></p>
+                <label for="deslocamento">Deslocamento: </label>
+                <input type="number" id="deslocamento" value="0">
+                <p></p>
+            </div>
+            <div class="temp2"> 
+                <label for="vida-max">Máximo de Pontos de Vida: </label>
+                <input type="number" id="vida-max" value="0">
+                <p></p>
+                
+                <div class="tempo1">
+                <h4>Pontos de Vida Atuais:</h4>
+                <label for="vida-atual"> </label>
+                <input type="text" id="vida-atual" value="">
+                </div>
+
+            </div>
+            <div class="temp3"> 
+                <label for="vida-temporaria">Pontos de Vida Temporários: </label>
+                <input type="number" id="vida-temporaria" value="0">
+            </div>
+            <div class="temp4"> 
+                <label for="total">Total: </label>
+                <input type="number" id="total" value="0">
+                <p></p>
+                <p></p>
+                <div class="tempo2">
+                <label for="dado-vida"><h4>Dado de Vida:</h4></label>
+                <input type="text" id="dado-vida" value="">
+                </div>
+                
+            </div>
+            <div class="temp5"> 
+
+                <h4>Resistência à Morte</h4>
+
+                <label for="sucessos1">Sucessos: </label>
+                <input type="checkbox" id="sucessos1">
+                <span class="checkmark"></span>
+                <label for="sucessos2"></label>
+                <input type="checkbox" id="sucessos2">
+                <span class="checkmark"></span>
+                <label for="sucessos3"></label>
+                <input type="checkbox" id="sucessos3">
+                <span class="checkmark"></span>
+                <p></p>
+
+                <label for="fracassos1">Fracassos: </label>
+                <input type="checkbox" id="fracassos1">
+                <span class="checkmark"></span>
+                <label for="fracassos2"></label>
+                <input type="checkbox" id="fracassos2">
+                <span class="checkmark"></span>
+                <label for="fracassos3"></label>
+                <input type="checkbox" id="fracassos3">
+                <span class="checkmark"></span>
+
+                
+            </div>
+            <div class="moedas">
+                <div class="moed">
+                <h4>Moedas</h4>
+                </div>
+
+                <label for="pc">PC:</label>
+                <input type="number" id="pc" value="0"> 
+
+                <label for="pp">PP:</label> 
+                <input type="number" id="pp" value="0"> 
+
+
+                <label for="pe">PE:</label>
+                <input type="number" id="pe" value="0"> 
+                <p></p>
+
+                <label for="po">PO:</label>
+                <input type="number" id="po" value="0"> 
+                
+
+                <label for="pl">PL:</label>
+                <input type="number" id="pl" value="0"> 
+                <p></p>
+            </div>
+
+        </div>
+
+
+        <div class="m6"> 
+
+            <div class="pericias">
+                <h4>Pericias</h4>
+                <div class="peri1">
+                <span>
+                    <input type="checkbox" id="acrobacia-check" oninput="atualizarPericias();">
+                    <label for="acrobacia-check">Acrobacia:</label>
+                    <span id="mod-acrobacia">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri2">
+                <span>
+                    <input type="checkbox" id="arcanismo-check" oninput="atualizarPericias();">
+                    <label for="arcanismo-check">Arcanismo:</label>
+                    <span id="mod-arcanismo">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri3">
+                <span>
+                    <input type="checkbox" id="atletismo-check" oninput="atualizarPericias();">
+                    <label for="atletismo-check">Atletismo:</label>
+                    <span id="mod-atletismo">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri4">
+                <span>
+                    <input type="checkbox" id="atuacao-check" oninput="atualizarPericias();">
+                    <label for="atuacao-check">Atuação:</label>
+                    <span id="mod-atuacao">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri5">
+                <span>
+                    <input type="checkbox" id="enganacao-check" oninput="atualizarPericias();">
+                    <label for="enganacao-check">Enganação:</label>
+                    <span id="mod-enganacao">(0)</span> 
+                </span>
+                </div>
+
+                <div class="peri6">
+                <span>
+                    <input type="checkbox" id="furtividade-check" oninput="atualizarPericias();">
+                    <label for="furtividade-check">Furtividade:</label>
+                    <span id="mod-furtividade">(0)</span>
+                </span>
+                </div>
+               
+                <div class="peri7">
+                <span>
+                    <input type="checkbox" id="historia-check" oninput="atualizarPericias();">
+                    <label for="historia-check">História:</label>
+                    <span id="mod-historia">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri8">
+                <span>
+                    <input type="checkbox" id="intimidacao-check" oninput="atualizarPericias();">
+                    <label for="intimidacao-check">Intimidação:</label>
+                    <span id="mod-intimidacao">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri9">
+                <span>
+                    <input type="checkbox" id="intuicao-check" oninput="atualizarPericias();">
+                    <label for="intuicao-check">Intuição:</label>
+                    <span id="mod-intuicao">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri10">
+                <span>
+                    <input type="checkbox" id="investigacao-check" oninput="atualizarPericias();">
+                    <label for="investigacao-check">Investigação:</label>
+                    <span id="mod-investigacao">(0)</span>
+                </span>
+                </div>
+            
+                <div class="peri11">
+                <span>
+                    <input type="checkbox" id="adestrar-animais-check" oninput="atualizarPericias();">
+                    <label for="adestrar-animais-check">Adestrar Animais:</label>
+                    <span id="mod-adestrar-animais">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri12">
+                <span>
+                    <input type="checkbox" id="medicina-check" oninput="atualizarPericias();">
+                    <label for="medicina-check">Medicina:</label>
+                    <span id="mod-medicina">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri13">
+                <span>
+                    <input type="checkbox" id="natureza-check" oninput="atualizarPericias();">
+                    <label for="natureza-check">Natureza:</label>
+                    <span id="mod-natureza">(0)</span>
+                </span>
+                </div>
+           
+                <div class="peri14">
+                <span>
+                    <input type="checkbox" id="percepcao-check" oninput="atualizarPericias();">
+                    <label for="percepcao-check">Percepção:</label>
+                    <span id="mod-percepcao">(0)</span>
+                </span>
+                </div>
+            
+                <div class="peri15">
+                <span>
+                    <input type="checkbox" id="persuasao-check" oninput="atualizarPericias();">
+                    <label for="persuasao-check">Persuasão:</label>
+                    <span id="mod-persuasao">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri16">
+                <span>
+                    <input type="checkbox" id="prestidigitacao-check" oninput="atualizarPericias();">
+                    <label for="prestidigitacao-check">Prestidigitação:</label>
+                    <span id="mod-prestidigitacao">(0)</span>
+                </span>
+                </div>
+
+                <div class="peri17">
+                <span>
+                    <input type="checkbox" id="religiao-check" oninput="atualizarPericias();">
+                    <label for="religiao-check">Religião:</label>                   
+                    <span id="mod-religiao">(0)</span>
+                </span>
+                </div>
+            
+                <div class="peri18">
+                <span>
+                    <input type="checkbox" id="sobrevivencia-check" oninput="atualizarPericias();">
+                    <label for="sobrevivencia-check">Sobrevivência:</label>
+                    <span id="mod-sobrevivencia">(0)</span>
+                </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    </main>
+
+    <footer>
+        <p>Isso é um rodapé!🐉</p>
+    </footer>
+    
+    <script src="ficha1save.js"></script>
+    <script src="ficha1.js"></script>
+</body>
+</html>
